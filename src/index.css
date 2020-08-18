@@ -1,0 +1,73 @@
+:root {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.15rem;
+  border: 1px solid;
+  text-decoration: none;
+}
+
+nav a+a {
+  margin-left: 0.75rem;
+}
+
+nav a.active {
+  text-decoration: underline;
+  color: green;
+}
+
+.primary-layout {
+  display: flex;
+  min-height: 3rem;
+  flex-direction: column;
+  flex-basis: 100%;
+  border: 3px solid gray;
+  padding: 2rem;
+}
+
+.primary-layout header {
+  color: green;
+}
+
+.primary-layout> :last-child {
+  margin-top: 2rem;
+}
+
+main>* {
+  font-weight: bold;
+  color: red;
+}
+
+header>ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+header>ul>li,
+button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 0.5px solid green;
+  border-radius: 0.15rem;
+}
+
+header>ul>li+li {
+  margin-left: 2.5rem;
+}
+
+.login-form {
+  margin-top: 1.5rem;
+}
